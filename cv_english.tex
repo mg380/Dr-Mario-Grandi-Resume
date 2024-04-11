@@ -105,9 +105,9 @@
 
 % Build custom made command for quick employment history inputs
 \newcommand{\empitem}[7]{
-        {\large \textbf{#1,}} 
-        {{\fontseries{light}\selectfont #2}}\\
-        {{\fontseries{medium}\selectfont #3}} \\
+        {\large \textbf{#1}} \\
+        {{\fontseries{medium}\selectfont #2}}\\
+        {{\fontseries{light}\selectfont #3}} \hfill
         {\scshape\fontseries{light}\selectfont\footnotesize #4 \textendash{} #5 (#6)} 
         #7
 }
@@ -134,9 +134,9 @@
         \addcontentsline{toc}{section}{Personal info}
         \section*{\large Personal info}
         \begin{tabularx}{\textwidth}{cY}
-            \faicon{Phone}      & +44 (0)7999206347 \\
-            \faicon{envelope}   & \href{mailto:dr.mario.grandi@gmail.com}{dr.mario.grandi@gmail.com} \\
-            \faicon{mapmarker}  & 45a Borough Street, Brighton\\
+            \faPhone{}      & +44 (0)7999206347 \\
+            \faEnvelope{} & \href{mailto:dr.mario.grandi@gmail.com}{dr.mario.grandi@gmail.com} \\
+            \faMapMarker{}  & 45a Borough Street, Brighton\\
             & BN1 3BG, United Kingdom \\
         \end{tabularx}
         \vspace{.3cm} \\
@@ -147,9 +147,9 @@
         \addcontentsline{toc}{section}{Links}
         \section*{\large Links}
         \begin{tabular}{cl}
-        %    \faCode{}     & \href{https://example.com}{example.com}
-            \faicon{github}   & \href{https://github.com/mg380}{https://github.com/mg380} \\
-            \faicon{linkedin} & \href{https://www.linkedin.com/in/mario-grandi/}{www.linkedin.com/in/mario-grandi} \\
+            \faGlobe{}     & \href{https://mg380.github.io}{https://mg380.github.io}\\
+            \faGithub{}   & \href{https://github.com/mg380}{https://github.com/mg380} \\
+            \faLinkedin{} & \href{https://www.linkedin.com/in/mario-grandi/}{www.linkedin.com/in/mario-grandi} \\
             \aiOrcid{}     & \href{https://orcid.org/0000-0002-5924-2544}{0000-0002-5924-2544} \\
         \end{tabular}
         \vspace{10pt} \\
@@ -161,11 +161,11 @@
         \addcontentsline{toc}{section}{Skills}
         \section*{\large Skills}
         \begin{tabularx}{\textwidth}{cY}
-            \faicon{code}        & Python - C++ - Bash - MySQL - SQL - AWS - Git/GitHub/GitLab - Microsoft Excel \\
-            \faicon{toolbox}     & TensorFlow - Keras - Pandas - Scipy - Numpy - OpenCL - pyOpenCL - OpenMP - Vitis HLS \\ 
-            \faicon{cogs}        & Machine Learning - Statistics - Monte Carlo Simulations - Distributed Computing - Data Science Methods - Big-Data Analysis - Data Visualisation - Communication - Teamwork \\
-            \faicon{pen}        & \LaTeX - Microsoft Studio Office - Keynote\\
-            \faicon{LaptopCode}  & Linux - Windows - macOS \\
+            \faCode        & Python - C++ - Bash - MySQL - SQL - AWS - Git/GitHub/GitLab - Microsoft Excel \\
+            \faToolbox     & TensorFlow - Keras - Pandas - Scipy - Numpy - OpenCL - pyOpenCL - OpenMP - Vitis HLS \\ 
+            \faCogs      & Machine Learning - Statistics - Monte Carlo Simulations - Distributed Computing - Data Science Methods - Big-Data Analysis - Data Visualisation - Communication - Teamwork \\
+            \faPen        & \LaTeX - Microsoft Studio Office - Keynote\\
+            \faLaptopCode  & Linux - Windows - macOS \\
         \end{tabularx}
         \vspace{1pt} \\
         \rule{\linewidth}{0.4pt}
@@ -182,58 +182,61 @@
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % WORK EXPERIENCE
         \phantomsection{}
+        \addcontentsline{toc}{section}{Profile}
+        \section*{\scshape\Large Profile \rule{\linewidth}{0.4pt}}
+        A dedicated professional with a PhD in Experimental Particle Physics and more than 5 years of hands-on experience in data analysis, machine learning, and software development. Known for spearheading analytical projects and delivering actionable insights, I bring a proven track record in leveraging expertise in data visualization, big data technologies, and collaborative teamwork to solve complex challenges. I am eager to further enhance my skills and make meaningful contributions to a dynamic environment.
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % WORK EXPERIENCE
+        \phantomsection{}
         \addcontentsline{toc}{section}{Employment History}
         \section*{\scshape\Large Employment History \rule{\linewidth}{0.4pt}}
 %
-        \empitem{QA-UK Ltd}
+        \empitem{Head of Analytics}
+        {QA-UK Ltd}
         {London, United Kingdom}
-        {Head of Analytics}
         {May 2023}
         {ongoing}
         {Fulltime}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Working as the lead researcher for the company in driving all project pipelines from planning to deliverables, investigating and prototyping new technologies, and analysing collected data for the full stack of green technologies portfolio.
-            \item Implemented and analysed complex fluid, thermal, and optical simulation using parallelisation techniques on AWS and large High-Performance Computing systems. 
-            \item Aided in the negotiation and implementation of software license extension, delivering 25\% additional simulation time at no extra cost.   
+            \item Spearheaded the planning, development, and comprehensive analysis of the full QA-UK green technologies portfolio, directly supporting business decision-making.
+            \item Led a multi-disciplinary team in the development and analysis of a green energy project prototype, utilising AWS and HPC systems for complex simulations, enhancing investor and stakeholder engagement.
+            \item Negotiated the implementation of software license extension, delivering 25\% additional simulation time at no extra cost.
             \item Led the testing and analysis of a prototype for a multi-million dollar green energy project and presented results to investors and stakeholders.
         \end{itemize}
         }
 %
-        \empitem{Office for National Statistics}
+        \empitem {Statistical Production Analyst}
+        {Office for National Statistics}
         {Titchfield, United Kingdom}
-        {Statistical Production Analyst}
         {Sept 2022}
         {Mar 2023}
         {Fulltime Contractor}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Was the co-lead of an 8-member team in charge of the collection and analysis of international trade data and provide effective insight, used by over 5 external clients and 2 internal branches to make government-wide decisions.
-            \item Improved code quality through automated testing, reviewing, and validation.
-            \item Produced clean and error-free Python code using Git for version control, to streamline data analysis and improve internal quality coding standards.
-            \item Collaborated with 3 cross-platform professionals in an Agile environment and with a strict schedule, to oversee the successful delivery of requirements needed for a new software analysis platform.
-            \item Identified several areas of improvement in the used statistical analysis methods and implemented cost-effective solutions.
-            \item Streamlined pipeline processes using the Pandas Python library to reduce overall production and preparation time by over two weeks.
+            \item Oversaw development for ITIS production team, leading enhancements of SAS and Python-based analysis systems which directly impacted the national GDP and the government decision making.
+            \item Supervised refinement of pre- and post-analysis scripts, resulting in increase of over 50\% in productivity and setting a new standard for internal coding practices.
+            \item Utilized AGILE methodology, detailing requirements and user stories on JIRA for the orchestration of system upgrades and migration to Python-based Hadoop environment.
+            \item Strengthened analytical capabilities and operational efficacy by identifying areas of improvement in the analysis structure, thus improving data quality.
         \end{itemize}
         }
 %
-        \empitem{University of Sussex}
+        \empitem{Post-Doctoral Research Fellow}
+        {University of Sussex}
         {Brighton, United Kingdom}
-        {Post-Doctoral Research Fellow}
         {Aug 2021}
         {Aug 2022}
         {Fulltime}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Created a complex tracking algorithm in Python and C++, accelerated on FPGA hardware using HLS and on software using OpenCL and OpenMP.
-            \item Achieved a decrease in the processing latency by a factor of 15 compared to software and occupy less than 50\% of available hardware resources.
-            \item Maintained Linux-based server system hosting accelerator cards interfaced with a distributed computing system to streamline computation.
-            \item Developed large-scale statically accurate Monte Carlo physics simulations using C++ and Python to test the performance of the developed algorithms.
-            \item Successfully delivered the final product and presented final results to the funding agents and collaboration stakeholders, ensuring the programme's continued funding.
-            \item Provided support and training for master and final year physics students.
+            \item Led the development of a state-of-the-art tracking algorithm in Python and C++, achieving a ×15 processing latency reduction on FPGA hardware using OpenCL and OpenMP
+            \item Managed project lifecycle, coordinating software and FPGA hardware integration for high-performance results in Linux-based server system interfaced with a high performance distributed computing system.
+            \item Used C++ and Python to perform statistical analyses on data and develop a statically accurate large-scale Monte Carlo physics simulator and test the performance of the algorithm.
+            \item Successfully delivered the final product and presented data using Matplotlib to the funding agents and collaboration stakeholders, ensuring the programme’s continued funding.
+            \item Supported and trained master’s and bachelor’s physics students on the completion of their final year projects, including algorithm optimization and simulations.
         \end{itemize}
         }
         \vfill%
@@ -250,36 +253,36 @@
     \begin{minipage}[t][\dimexpr\textheight-2\fboxrule-2\fboxsep\relax][t]{\dimexpr0.6\textwidth-2\fboxrule-2\fboxsep\relax}
         \color{maintext}
         % \vspace{.6cm}
-        \empitem{Public Health England}
+        \empitem{Data Scientist}
+        {Public Health England}
         {Cambridge, United Kingdom}
-        {Data Scientist}
         {Jun 2019}
         {Sept 2019}
         {Internship}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Developed and trained a Python-based Machine Learning algorithm using TensorFlow and Keras to simulate statistically significant and anonymised synthetic patient data from sensitive patient health data.
-            \item Used data science analysis techniques in Python and Jupyter to define data integrity, data leakage and statistical resemblance and delivered the framework to the production team to enable them to draw meaningful conclusions and provide actionable recommendations to stakeholders and research partners.
-            \item Monitored and optimise ML training and development using cometML
-            \item Analysed and synthesised patient data with SQL tables, views, and Jupyter Notebooks in Python to provide insightful reports on its statical properties to team and stockholders.
-            \item Documented full system analysis, testing, and implementation for production team handover.
+            \item Led the developed of an innovative unsupervised Machine Learning model with Keras and Tensorflow, for the generation of synthetic datasets, to enhance patient data privacy and research capabilities.
+            \item Utilised advanced statistical analysis and machine learning techniques in Python to preserve statistical properties of PHE data, ensure data-integrity, and provide actionable insights.
+            \item Coordinated project lifecycle, from concept development to implementation and testing with CometML and custom MLOps tools to deliver a fully functioning analysis and validation framework in SQL and Python Jupyter Notebooks, used to draw meaningful statistical conclusions and provide actionable recommendations to stakeholders and research partners.
+            \item Liaised with stakeholders, ensuring alignment with project objectives and timelines for the data generation solution.
+            \item Provided comprehensive documentation for the system’s analysis, testing, and implementation for production team handover.
         \end{itemize}
         }
-        \empitem{University of Sussex}
+        \empitem{High Energy Physics PhD Researcher}
+        {University of Sussex}
         {Brighton, United Kingdom}
-        {High Energy Physics PhD Researcher}
         {Sept 2017}
         {Jul 2021}
         {Fulltime}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Performed large-scale data analysis using data science methods and skills on petabytes of data collected by the ATLAS experiment at CERN to perform feature extraction, data cleaning and transformation, and maximise experimental sensitivity.
-            \item Used CI/CD with GitLab to help develop and implement C++, Python, and Bash C++ code to perform cut-based statistical analyses and machine learning based identification methods to discriminate events with very rare theoretically predicted particles from large background of standard model physics.
-            \item Received extensive training in big data analysis, machine learning, and high- performance computing techniques through the DISCnet bursary programme.
-            \item Maintained and improved on large analysis framework using coding best practices and large-scale project management with JIRA and GitLab to resolve bugs and issues quickly and effectively.
-            \item Presented the work at several workshops, group meetings, and international conferences.
+            \item Conducted large-scale statistical analyses on petabyte-scale data for the ATLAS experiment at CERN, contributing to the advancement of experimental physics and performing feature extraction, data cleaning, and transformation to maximise experimental sensitivity.
+            \item Developed and implemented C++, Python, and Bash codes, maintained with CI/CD and GitLab, to perform cut-based statistical analyses and machine learning based identification and discriminate for extremely rare physics events from large background noise.
+            \item Received extensive training in big data analysis, machine learning, and high-performance computing techniques through the DISCnet bursary programme.
+            \item Maintained and improved a large analysis framework using coding best practices and large-scale project management with JIRA and GitLab to resolve bugs and issues quickly and effectively.
+            \item Used data visualisation tools to generate insight and present work in workshops, meetings, and conferences.
             \item The results of my analyses have been published in several respected physics journals.
         \end{itemize}
         }
@@ -289,15 +292,15 @@
         \addcontentsline{toc}{section}{Education}
         \section*{\scshape\Large Education \rule{.5\linewidth}{0.4pt}}
 %
-        {\large \textbf{PhD in Particle Physics, University of Sussex}} \\ {(Doctorate)}
+        {\large \textbf{PhD in Particle Physics}} \\ {University of Sussex}\hfill
         {\scshape\fontseries{light}\selectfont\footnotesize Sept 2017 \textendash{} Jul 2021} \\
         {\textit{Search for supersymmetry with the ATLAS detector at the Large Hadron Collider in final states with two hadronically decaying $\tau$-leptons.}} \\
         
-        {\large \textbf{MPhys in Physics and Astrophysics, University of Sussex}} \\ {(Masters)}
+        {\large \textbf{MPhys in Physics and Astrophysics}} \\ {University of Sussex} \hfill
         {\scshape\fontseries{light}\selectfont\footnotesize Sept 2013 \textendash{} Aug 2017} \\
         {\textit{Grade: 1$^{st}$ class degree with honours.}} \\
 
-        {\large \textbf{International Baccalaureate, International School of Geneva}} \\ {(Ceritificate of Education)}
+        {\large \textbf{International Baccalaureate}} \\ {International School of Geneva}\hfill
         {\scshape\fontseries{light}\selectfont\footnotesize Sept 2011 \textendash{} Aug 2013} \\
         {\footnotesize Higher Level subject: Physics, Mathematics, Economics} \\
         {\footnotesize Standard Level subjects: English, Spanish, Chemistry} \\
@@ -322,10 +325,10 @@
         \addcontentsline{toc}{section}{Languages}
         \section*{\large Languages}
         \begin{tabular}{cl}
-            \faicon{language} & English (Native) \\
-            \faicon{language} & Italian (Native) \\
-            \faicon{language} & French  (Advanced) \\
-            \faicon{language} & Spanish (Intermediate) \\
+            \faLanguage & English (Native) \\
+            \faLanguage & Italian (Native) \\
+            \faLanguage & French  (Advanced) \\
+            \faLanguage & Spanish (Intermediate) \\
         \end{tabular}
         \vspace{.3cm}
         \\
@@ -334,14 +337,27 @@
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % CERTIFICATES AND AWARDS RECEIVED
         \phantomsection
+        \addcontentsline{toc}{section}{Projects}
+        \section*{\large Projects}
+        \begin{tabularx}{\textwidth}{cY}
+            \href{https://github.com/mg380}{\faGitlab} & Health data Analysis for Terre Innovative Healthcare’s P.A.N.D.A. project using Tableau dashboard, enhancing understanding of pregnancy-related issues.\\
+            \href{https://github.com/mg380/VesciclesMLDetection}{\faGitlab} & Development of a CNN Machine Learning algorithm for Alzheimers identification through brain vesicle analysis using supervised learning. \\
+            \href{https://github.com/mg380/PCpDet}{\faGitlab} & Implementation of edge detection software algorithms for star detection in telescope images.\\
+            \href{https://github.com/mg380/hough_pixel_match}{\faGitlab} & Application of Hough Transform for pattern finding using pixel matching in an image.
+        \end{tabularx}
+        \vspace{.3cm}
+        \\
+        \rule{\linewidth}{0.4pt}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % CERTIFICATES AND AWARDS RECEIVED
+        \phantomsection
         \addcontentsline{toc}{section}{Interest and Accomplishments}
         \section*{\large Interest and Accomplishments}
         \begin{tabularx}{\textwidth}{cY}
-            \faicon{asterisk} & Analysed heath data collected by Terre Innovative Healthcare P.A.N.D.A. project to derive insight to better understand pregnancy related issues in rural countries and areas.\\
-            \faicon{asterisk} & Developed, trained, and tested a CNN Machine Learning algorithm to automatically identify brain vesicles dyed with chemical compounds for Alzheimer's identification. \\
-            \faicon{asterisk} & Winner of the Outreach Activity Project at the 2019 European School of High Energy Physics.\\
-            \faicon{asterisk} & awarded the “All-round Middle Year Program Student" award.\\
-            \faicon{asterisk} & Annual collaboration with “Progetti ECAR Mandabe” to organise fund-raising events for the village of Mandabe in Madagascar.\\
+            \faAsterisk & Winner of the Outreach Activity Project at the 2019 European School of High Energy Physics.\\
+            \faAsterisk & Awarded the "All-round Middle Year Program Student" award. \\
+            \faAsterisk & Annual collaboration with "Progetti ECAR Mandabe" to organise fund-raising events for the village of Mandabe in Madagascar.\\
+            \faAsterisk & IBM certified in Python Project for Data Science and Python for Data Science, AI \& Development.
         \end{tabularx}
         \vspace{.3cm}
         \\
