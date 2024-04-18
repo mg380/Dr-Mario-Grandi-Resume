@@ -108,14 +108,14 @@
         {\large \textbf{#1}} \\
         {{\fontseries{medium}\selectfont #2}}\\
         {{\fontseries{light}\selectfont #3}} \hfill
-        {\scshape\fontseries{light}\selectfont\footnotesize #4 \textendash{} #5 (#6)} 
+        {\scshape\fontseries{light}\selectfont\footnotesize #4 \textendash{} #5 #6} 
         #7
 }
 
 \begin{document}
-\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
+%\setlength{\topskip}{0pt}\setlength{\footskip}{0pt}%
 \fcolorbox{red}{sidebg}{%
-    \begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.40\textwidth-2\fboxrule-2\fboxsep\relax}
+    \begin{minipage}[t][\textheight-2\fboxsep-2\fboxrule][t]{\dimexpr0.4\textwidth-2\fboxrule-2\fboxsep\relax}
         \color{sidetext}
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % YOUR NAME, PRONOUNS, OCCUPATION(s), AND HEADSHOT
@@ -133,12 +133,12 @@
         \phantomsection{}
         \addcontentsline{toc}{section}{Personal info}
         \section*{\large Personal info}
-        \begin{tabularx}{\textwidth}{cY}
+        \begin{tabular}{cl}
             \faPhone{}      & +44 (0)7999206347 \\
             \faEnvelope{} & \href{mailto:dr.mario.grandi@gmail.com}{dr.mario.grandi@gmail.com} \\
             \faMapMarker{}  & 45a Borough Street, Brighton\\
-            & BN1 3BG, United Kingdom \\
-        \end{tabularx}
+                            & BN1 3BG, United Kingdom \\
+        \end{tabular}
         \vspace{.3cm} \\
         \rule{\linewidth}{0.4pt} \\
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,14 +161,15 @@
         \addcontentsline{toc}{section}{Skills}
         \section*{\large Skills}
         \begin{tabularx}{\textwidth}{cY}
-            \faCode        & Python - C++ - Bash - MySQL - SQL - AWS - Git/GitHub/GitLab - Microsoft Excel \\
-            \faToolbox     & TensorFlow - Keras - Pandas - Scipy - Numpy - OpenCL - pyOpenCL - OpenMP - Vitis HLS \\ 
+            \faCode        & Python \textendash{} C++ \textendash{} Bash \textendash{} MySQL \textendash{} SQL \textendash{} AWS \textendash{} Git/GitHub/GitLab \textendash{} Microsoft Excel \\
+            \faToolbox     & TensorFlow \textendash{} Keras \textendash{} Pandas \textendash{} Scipy \textendash{} Numpy \textendash{} OpenCL \textendash{} pyOpenCL \textendash{} OpenMP \textendash{} Vitis HLS \\ 
             \faCogs      & Machine Learning - Statistics - Monte Carlo Simulations - Distributed Computing - Data Science Methods - Big-Data Analysis - Data Visualisation - Communication - Teamwork \\
-            \faPen        & \LaTeX - Microsoft Studio Office - Keynote\\
-            \faLaptopCode  & Linux - Windows - macOS \\
+            \faPen        & \LaTeX\hspace{0pt} \textendash{} Microsoft Studio Office \textendash{} Keynote\\
+            \faLaptopCode  & Linux \textendash{} Windows \textendash{} macOS \\
         \end{tabularx}
-        \vspace{1pt} \\
-        \rule{\linewidth}{0.4pt}
+        \vspace{1pt} 
+        \\
+        \rule{\linewidth}{0.4pt}\\
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % GRADESCALE (if nesseary, e.g. if you apply abroad, where scales 
         % are different. You should at least provide, what the best possible
@@ -183,20 +184,21 @@
         % WORK EXPERIENCE
         \phantomsection{}
         \addcontentsline{toc}{section}{Profile}
-        \section*{\scshape\Large Profile \rule{\linewidth}{0.4pt}}
-        A dedicated professional with a PhD in Experimental Particle Physics and more than 5 years of hands-on experience in data analysis, machine learning, and software development. Known for spearheading analytical projects and delivering actionable insights, I bring a proven track record in leveraging expertise in data visualization, big data technologies, and collaborative teamwork to solve complex challenges. I am eager to further enhance my skills and make meaningful contributions to a dynamic environment.
+        \section*{\scshape\Large Profile \hrulefill}
+        %A dedicated professional with a PhD in Experimental Particle Physics and more than 5 years of hands-on experience in data analysis, machine learning, and software development. I spearhead technical and analytical projects to delivering actionable insights and bring a proven track record of leveraging expertise in data visualization, big data technologies, and collaborative teamwork to solve a wide variety of complex challenges. I am eager to further enhance my skills and make meaningful contributions to a dynamic environment.
+        I spearhead technical and analytical projects to delivering actionable insights and bring a proven track record of leveraging expertise in data visualization,  data analysis, machine learning, software development and collaborative teamwork to solve a wide variety of complex challenges. I am eager to further enhance my skills and make meaningful contributions to a dynamic environment.
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % WORK EXPERIENCE
         \phantomsection{}
         \addcontentsline{toc}{section}{Employment History}
-        \section*{\scshape\Large Employment History \rule{\linewidth}{0.4pt}}
+        \section*{\scshape\Large Employment History \hrulefill}
 %
         \empitem{Head of Analytics}
         {QA-UK Ltd}
         {London, United Kingdom}
         {May 2023}
         {ongoing}
-        {Fulltime}
+        {}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
@@ -212,7 +214,7 @@
         {Titchfield, United Kingdom}
         {Sept 2022}
         {Mar 2023}
-        {Fulltime Contractor}
+        {}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
@@ -220,6 +222,7 @@
             \item Supervised refinement of pre- and post-analysis scripts, resulting in increase of over 50\% in productivity and setting a new standard for internal coding practices.
             \item Utilized AGILE methodology, detailing requirements and user stories on JIRA for the orchestration of system upgrades and migration to Python-based Hadoop environment.
             \item Strengthened analytical capabilities and operational efficacy by identifying areas of improvement in the analysis structure, thus improving data quality.
+            \item Utilised Tableau and other visualisation methods to effectively communicate findings to key stakeholders and successfully drive project outcomes
         \end{itemize}
         }
 %
@@ -228,13 +231,14 @@
         {Brighton, United Kingdom}
         {Aug 2021}
         {Aug 2022}
-        {Fulltime}
+        {}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
-            \item Led the development of a state-of-the-art tracking algorithm in Python and C++, achieving a ×15 processing latency reduction on FPGA hardware using OpenCL and OpenMP
-            \item Managed project lifecycle, coordinating software and FPGA hardware integration for high-performance results in Linux-based server system interfaced with a high performance distributed computing system.
-            \item Used C++ and Python to perform statistical analyses on data and develop a statically accurate large-scale Monte Carlo physics simulator and test the performance of the algorithm.
+            \item Led the development of a state-of-the-art tracking algorithm in Python and C++, achieving a $\times$15 processing latency reduction on FPGA hardware.% using OpenCL and OpenMP
+            \item Managed project lifecycle, coordinating software and FPGA hardware integration for high-performance results in Linux-based high performance distributed computing system.
+            \item Developed a statistically accurate large-scale Monte Carlo physics simulator and analysis framework in Python and C++ to test the performance of the patter recognition algorithm.
+            %Used C++ and Python to perform statistical analyses on data and develop a statically accurate large-scale Monte Carlo physics simulator and test the performance of the algorithm.
             \item Successfully delivered the final product and presented data using Matplotlib to the funding agents and collaboration stakeholders, ensuring the programme’s continued funding.
             \item Supported and trained master’s and bachelor’s physics students on the completion of their final year projects, including algorithm optimization and simulations.
         \end{itemize}
@@ -258,7 +262,7 @@
         {Cambridge, United Kingdom}
         {Jun 2019}
         {Sept 2019}
-        {Internship}
+        {}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
@@ -274,7 +278,7 @@
         {Brighton, United Kingdom}
         {Sept 2017}
         {Jul 2021}
-        {Fulltime}
+        {}
         {
         \begin{itemize}
             \setlength{\itemsep}{-3pt}
@@ -290,7 +294,7 @@
         % EDUCATION
         \phantomsection{}
         \addcontentsline{toc}{section}{Education}
-        \section*{\scshape\Large Education \rule{.5\linewidth}{0.4pt}}
+        \section*{\scshape\Large Education \hrulefill}
 %
         {\large \textbf{PhD in Particle Physics}} \\ {University of Sussex}\hfill
         {\scshape\fontseries{light}\selectfont\footnotesize Sept 2017 \textendash{} Jul 2021} \\
